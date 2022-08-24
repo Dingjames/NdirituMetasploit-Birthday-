@@ -1,4 +1,3 @@
-<script>
 //NdirituMetasploit 
 window.onload=()=>{
 
@@ -72,4 +71,3 @@ function mts(f,s) {
     s.style.visibility="visible"
   },940)
 }
-</script>
