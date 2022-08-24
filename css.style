@@ -1,0 +1,183 @@
+<style>
+@font-face {
+  font-family: mer;
+  src: url('Merienda-Bold.ttf');
+}
+@font-face {
+  font-family: Great Vibes;
+  src: url('GreatVibes-Regular.ttf');
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  position: relative;
+  overflow: hidden
+}
+#fp{
+  background-color: gold;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#bw{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: #7B7FA8;
+  font-weight: 1000;
+  font-family: "Merienda";
+}
+#sp{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://dl.dropbox.com/s/xygb1vonavhbuhp/backloon.jpg?dl=0');
+  display: none;
+  position: relative;
+  top: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  align-items: center;
+  transition: filter 1.5s ease;
+  overflow-x: hidden
+}
+#mts{
+  background: hotpink;
+  color: whitesmoke;
+  font-weight: bolder;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+        justify-content: center;
+        align-items: center;
+  font-family: "Handlee";
+  font-weight: 1000;
+  box-shadow: 0 0 5px deeppink;
+}
+#wb{
+  height: 150px;
+  width: 150px;
+  border-radius: 215px;
+  border: 30px solid transparent;
+  border-image: url('https://dl.dropbox.com/s/rdickxkb9cqbt43/flower-rose-royalty-free-clip-art-black-rose-border-d7e5e2c87d9f0ff33a307e19785fca6b.png?dl=0') round 20%;
+  margin: 0 auto;
+  margin-top: 20px;
+  animation: ian 2s ease infinite;
+  
+}
+h1,h2{
+  font-family: "Miltonian";
+  color: hotpink;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  text-shadow: 0 0 20px pink;
+  
+}
+@keyframes ian{
+  100%{
+    filter: hue-rotate(360deg)
+  }
+}
+h2{
+  animation: ha 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 
+}
+h1{
+  animation: hs 2s cubic-bezier(0.6, -0.28, 0.735, 0.045)
+}
+@keyframes ha{
+  0%{
+    transform: translateX(-100vw)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+@keyframes hs {
+  0% {
+    transform: translateX(100vw)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+#party{
+  background: hotpink;
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bolder;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: "Pacifico"
+}
+#tp{
+  display: none;
+  background: #181818;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+  background-image: url('https://i.ibb.co/bB8z87v/924bc66cc56b545626bc0ff1a4eab737.jpg');
+}
+#heart {
+    position: fixed;
+    top: -1vh;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    transform: translateY(0);
+    animation: rain 3s linear;
+    z-index: 8999;
+    
+}
+@keyframes rain {
+    100% {
+        transform: translateY(110vh);
+    }
+}
+#b{
+  position: fixed;
+  top: -1vh;
+  height: 150px;
+  width: 100px;
+  transform: translateY(0);
+  animation: rain 3s linear;
+  z-index: 8999;
+  left: 0;
+}
+#ba{
+  position: fixed;
+  top: 1vh;
+  left: -30px;
+  height: 150px;
+  width: 100px;
+  transform: translateY(0);
+  animation: rain 3s linear;
+  z-index: 8999;
+  left: 0;
+  transform: rotate(40deg)
+}
+#wish{
+  color: aliceblue;
+  font-family: "Fredoka One";
+  width: 90%;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px
+}
+</style>
